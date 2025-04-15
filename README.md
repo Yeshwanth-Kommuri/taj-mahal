@@ -1,1 +1,5 @@
-# taj-mahal
+<<<<<<< HEAD
+(your local changes)
+=======
+(remote changes)
+>>>>>>> (commit hash)
