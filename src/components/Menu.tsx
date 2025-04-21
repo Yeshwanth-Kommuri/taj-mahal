@@ -14,34 +14,35 @@ const menuCategories = [
       {
         name: "Rosé Wines",
         items: [
-          { name: "Côtes de Provence", price: "€25.00", quantity: "Bottle" },
-          { name: "Anjou Rosé", price: "€22.00", quantity: "Bottle" },
-          { name: "Tavel", price: "€28.00", quantity: "Bottle" },
+          { name: "Coasts of Provence", price: "€17.00", quantity: "Bottle" },
+          { name: "Tavel", price: "€20.00", quantity: "Bottle" },
+          { name: "Indian Grover", price: "€24.00", quantity: "Bottle" },
+          { name: "Bandol", price: "€27.00", quantity: "Bottle" },
         ]
       },
       {
         name: "Red Wines",
         items: [
-          { name: "Bordeaux Saint-Émilion", price: "€30.00", quantity: "Bottle" },
-          { name: "Côtes du Rhône", price: "€24.00", quantity: "Bottle" },
-          { name: "Bourgogne Pinot Noir", price: "€35.00", quantity: "Bottle" },
+          { name: "Gamay from Tourraine", price: "€18.00", quantity: "Bottle" },
+          { name: "Saumur champigny", price: "€22.00", quantity: "Bottle" },
+          { name: "Saint Nicholas of Burgundy", price: "€18.00", quantity: "Bottle" },
+          { name: "Saint Emilion", price: "€26.00", quantity: "Bottle" },
+          { name: "Brouilly", price: "€22.00", quantity: "Bottle" },
+          { name: "Pinot noit from alsace", price: "€18.00", quantity: "Bottle" },
+          { name: "Indian Grover", price: "€24.00", quantity: "Bottle" },
         ]
       },
       {
         name: "White Wines",
         items: [
-          { name: "Chablis", price: "€32.00", quantity: "Bottle" },
-          { name: "Sancerre", price: "€34.00", quantity: "Bottle" },
-          { name: "Alsace Riesling", price: "€26.00", quantity: "Bottle" },
+          { name: "Muscadet on the lees AOC", price: "€17.00", quantity: "Bottle" },
+          { name: "Riesling AOP", price: "€18.00", quantity: "Bottle" },
         ]
       },
       {
         name: "Wines by the Pitcher",
         items: [
-          { name: "House Red", price: "€12.00", quantity: "25cl" },
-          { name: "House Red", price: "€20.00", quantity: "50cl" },
-          { name: "House White", price: "€12.00", quantity: "25cl" },
-          { name: "House White", price: "€20.00", quantity: "50cl" },
+          { name: "Red-Pink-White European", price: "€9.00", quantity: "50cl" },
         ]
       },
     ]
@@ -51,11 +52,20 @@ const menuCategories = [
     name: "Drinks",
     subcategories: [
       {
-        name: "Cocktails",
+        name: "Appetizers Drinks",
         items: [
-          { name: "Mango Lassi Cocktail", price: "€9.00", quantity: "25cl", popular: true },
-          { name: "Indian Spiced Mojito", price: "€10.00", quantity: "25cl" },
-          { name: "Delhi Mule", price: "€9.50", quantity: "25cl" },
+          { name: "Kir", price: "€6.00", quantity: "10cl", popular: true },
+          { name: "Kir Royal", price: "€7.50", quantity: "10cl", popular: true },
+          { name: "Champage Cutting", price: "€10.00", quantity: "10cl", popular: true },
+          { name: "Americano", price: "€5.00", quantity: "6cl", popular: true },
+          { name: "Whisky", price: "€7.00", quantity: "4cl", popular: true },
+          { name: "Whisky baby", price: "€4.00", quantity: "2cl", popular: true },
+          { name: "Martini", price: "€6.00", quantity: "2cl" },
+          { name: "Ricard", price: "€6.00", quantity: "2cl" },
+          { name: "Pastis", price: "€6.00", quantity: "2cl" },
+          { name: "Gin", price: "€4.00", quantity: "2cl" },
+          { name: "Vodka", price: "€4.00", quantity: "2cl" },
+          { name: "House cocktail", price: "€7.00", quantity: "10cl" },
         ]
       },
     ]
@@ -67,10 +77,9 @@ const menuCategories = [
       {
         name: "Traditional Lassi",
         items: [
-          { name: "Sweet Lassi", price: "€5.00", quantity: "30cl", popular: true },
-          { name: "Salty Lassi", price: "€5.00", quantity: "30cl" },
+          { name: "Plain, sweet or savoury lassi", price: "€6.00", quantity: "30cl", popular: true },
+          { name: "Banana rose gold lassi", price: "€6.00", quantity: "30cl" },
           { name: "Mango Lassi", price: "€6.00", quantity: "30cl", popular: true },
-          { name: "Rose Lassi", price: "€6.00", quantity: "30cl" },
         ]
       },
     ]
@@ -80,18 +89,11 @@ const menuCategories = [
     name: "Beers",
     subcategories: [
       {
-        name: "Indian Beers",
+        name: "Beers",
         items: [
-          { name: "Kingfisher", price: "€6.50", quantity: "33cl", popular: true },
-          { name: "Cobra", price: "€6.50", quantity: "33cl", popular: true },
-          { name: "Taj Mahal", price: "€7.00", quantity: "33cl" },
-        ]
-      },
-      {
-        name: "Other Beers",
-        items: [
-          { name: "Kronenbourg", price: "€5.50", quantity: "33cl" },
-          { name: "Leffe", price: "€6.00", quantity: "33cl" },
+          { name: "Kingfisher Indian Beer", price: "€6.00", quantity: "25cl", popular: true },
+          { name: "Leffe", price: "€5.00", quantity: "25cl", popular: true },
+          { name: "Hieneken", price: "€5.00", quantity: "25cl" },
         ]
       },
     ]
@@ -103,11 +105,16 @@ const menuCategories = [
       {
         name: "Soft Drinks",
         items: [
-          { name: "Coca-Cola", price: "€3.50", quantity: "33cl" },
-          { name: "Sprite", price: "€3.50", quantity: "33cl" },
-          { name: "Fanta", price: "€3.50", quantity: "33cl" },
-          { name: "Mineral Water", price: "€4.00", quantity: "50cl" },
-          { name: "Mineral Water", price: "€6.00", quantity: "100cl" },
+          { name: "Vittel", price: "€6.00", quantity: "100cl" },
+          { name: "San Pellegrino", price: "€6.00", quantity: "100cl" },
+          { name: "Coca Cola or Diet or Zero", price: "€3.00", quantity: "100cl" },
+          { name: "Perrier", price: "€3.00", quantity: "100cl" },
+          { name: "Orangina", price: "€3.00", quantity: "100cl" },
+          { name: "Diablo", price: "€2.50", quantity: "100cl" },
+          { name: "Pineapple juice", price: "€3.00", quantity: "100cl" },
+          { name: "Orange juice", price: "€3.00", quantity: "100cl" },
+          { name: "Apricot juice", price: "€3.00", quantity: "100cl" },
+          { name: "Water syrup(grenadine, strawberry, mint, lemon)", price: "€2.00", quantity: "100cl" },
         ]
       },
     ]
@@ -119,16 +126,10 @@ const menuCategories = [
       {
         name: "Indian Hot Drinks",
         items: [
-          { name: "Masala Chai", price: "€4.50", quantity: "1 cup", popular: true },
-          { name: "Indian Coffee", price: "€4.00", quantity: "1 cup" },
-        ]
-      },
-      {
-        name: "Other Hot Drinks",
-        items: [
-          { name: "Espresso", price: "€2.50", quantity: "1 cup" },
-          { name: "Cappuccino", price: "€3.50", quantity: "1 cup" },
-          { name: "Hot Chocolate", price: "€3.50", quantity: "1 cup" },
+          { name: "Coffee", price: "€2.00", quantity: "1 cup", popular: true },
+          { name: "Natural tea or, with mint, verbena or linden infusion", price: "€3.00", quantity: "1 cup" },
+          { name: "Homemade cardamom tea", price: "€3.00", quantity: "1 cup", popular: true },
+          { name: "Punjab Milk Tea", price: "€4.00", quantity: "1 cup", popular: true },
         ]
       },
     ]
@@ -140,12 +141,13 @@ const menuCategories = [
       {
         name: "Traditional Breads",
         items: [
-          { name: "Plain Naan", price: "€3.00", popular: true },
-          { name: "Garlic Naan", price: "€3.50", popular: true },
-          { name: "Cheese Naan", price: "€4.00" },
-          { name: "Butter Naan", price: "€3.50" },
-          { name: "Paratha", price: "€3.50" },
-          { name: "Roti", price: "€2.50" },
+          { name: "Plain Naan", price: "€4.00", popular: true },
+          { name: "Chapati", price: "€5.00", popular: true },
+          { name: "Paratha", price: "€5.00" },
+          { name: "NAM Cheese", price: "€5.00" },
+          { name: "Garlic Naan", price: "€5.00" },
+          { name: "Garlic cheese", price: "€6.00" },
+          { name: "Chicken Tikka Naan", price: "€5.00" },
         ]
       },
     ]
@@ -157,10 +159,13 @@ const menuCategories = [
       {
         name: "Tandoori Specialties",
         items: [
+          { name: "Sheekh Kabab", price: "€7.00", popular: true },
           { name: "Tandoori Chicken", price: "€8.00", popular: true },
-          { name: "Chicken Tikka", price: "€9.00", popular: true },
-          { name: "Seekh Kebab", price: "€9.00" },
-          { name: "Mixed Grill", price: "€12.00" },
+          { name: "Fish Tikka", price: "€8.00" },
+          { name: "Chicken Tikka", price: "€7.00" },
+          { name: "Lamb Tikka", price: "€8.00" },
+          { name: "Tandoori prawns", price: "€16.00" },
+          { name: "Shahi Mix Grill (for 2 people)", price: "€22.00" },
         ]
       },
     ]
@@ -172,10 +177,16 @@ const menuCategories = [
       {
         name: "Vegetarian Starters",
         items: [
-          { name: "Vegetable Samosa", price: "€6.00", popular: true },
-          { name: "Onion Bhaji", price: "€6.00", popular: true },
-          { name: "Paneer Tikka", price: "€8.00" },
-          { name: "Aloo Tikki", price: "€6.00" },
+          { name: "Samosa", price: "€7.00", popular: true },
+          { name: "Dall Soup", price: "€7.00", popular: true },
+          { name: "Raita", price: "€5.00" },
+          { name: "Pakora", price: "€5.00" },
+          { name: "Baigan Bajia", price: "€5.00" },
+          { name: "Ginga Pakora", price: "€7.00" },
+          { name: "Baja Onion", price: "€6.00" },
+          { name: "Chicken pakora", price: "€7.00" },
+          { name: "Shahi mix pakora (for 1 people)", price: "€8.00" },
+          { name: "Shahi mix pakora (for 2 people)", price: "€15.00" },
         ]
       },
     ]
@@ -187,12 +198,17 @@ const menuCategories = [
       {
         name: "Chicken Specialties",
         items: [
-          { name: "Butter Chicken", price: "€15.00", popular: true, image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" },
-          { name: "Chicken Tikka Masala", price: "€14.00", popular: true, image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1971&q=80" },
-          { name: "Chicken Korma", price: "€15.00" },
-          { name: "Chicken Vindaloo", price: "€14.00" },
-          { name: "Chicken Madras", price: "€14.00" },
-          { name: "Chicken Jalfrezi", price: "€15.00" },
+          { name: "Chicken Curry", price: "€15.00", popular: true },
+          { name: "Chicken Madras", price: "€15.00", popular: true },
+          { name: "Chicken Vindaloo", price: "€15.00" },
+          { name: "Chicken tikka masala", price: "€15.00" },
+          { name: "Chicken with vegetables", price: "€15.00" },
+          { name: "Chicken shahi korma", price: "€15.00" },
+          { name: "Eggplant Chicken", price: "€15.00" },
+          { name: "Butter chicken", price: "€15.00" },
+          { name: "Chicken sag", price: "€15.00" },
+          { name: "Chicken Dall", price: "€15.00" },
+          { name: "Mushroom chicken", price: "€15.00" },
         ]
       },
     ]
@@ -204,11 +220,13 @@ const menuCategories = [
       {
         name: "Lamb Specialties",
         items: [
-          { name: "Lamb Rogan Josh", price: "€16.00", popular: true, image: "https://images.unsplash.com/photo-1605709303005-0fdacbbbec70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" },
-          { name: "Lamb Korma", price: "€16.00" },
-          { name: "Lamb Vindaloo", price: "€16.00" },
-          { name: "Lamb Madras", price: "€16.00" },
-          { name: "Lamb Biryani", price: "€17.00", popular: true },
+          { name: "Palak Lamb", price: "€16.00", popular: true },
+          { name: "Lamb Shahi Korma", price: "€16.00" },
+          { name: "Lamb Tikka Masala", price: "€16.00" },
+          { name: "Baigan Lamb", price: "€16.00" },
+          { name: "Dall Ghiost", price: "€16.00", popular: true },
+          { name: "Lamb Rogane Josh", price: "€16.00", popular: true },
+          { name: "Lamb Mushroom Masala", price: "€16.00", popular: true },
         ]
       },
     ]
@@ -220,12 +238,13 @@ const menuCategories = [
       {
         name: "Vegetarian Specialties",
         items: [
-          { name: "Paneer Butter Masala", price: "€13.00", popular: true, image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" },
-          { name: "Palak Paneer", price: "€13.00", popular: true },
-          { name: "Chana Masala", price: "€12.00" },
-          { name: "Dal Makhani", price: "€12.00" },
-          { name: "Aloo Gobi", price: "€12.00" },
-          { name: "Baingan Bharta", price: "€13.00" },
+          { name: "Dall House", price: "€14.00", popular: true }, 
+          { name: "Mixed vegetables", price: "€14.00", popular: true },
+          { name: "Bharta", price: "€14.00" },
+          { name: "Vegetable Shahi Korma", price: "€14.00" },
+          { name: "Aloo Palak", price: "€14.00" },
+          { name: "Palak Paneer", price: "€14.00" },
+          { name: "Masala Mushrooms", price: "€14.00" },
         ]
       },
     ]
@@ -237,10 +256,13 @@ const menuCategories = [
       {
         name: "Seafood Specialties",
         items: [
-          { name: "Prawn Curry", price: "€17.00", popular: true, image: "https://images.unsplash.com/photo-1631709497146-a239ef373cf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" },
-          { name: "Fish Curry", price: "€16.00" },
-          { name: "Prawn Masala", price: "€17.00" },
-          { name: "Goan Fish Curry", price: "€16.00", popular: true },
+          { name: "Shrimp Curry", price: "€16.00", popular: true },
+          { name: "Shrimp Shahi korma", price: "€16.00" },
+          { name: "Sag Shrimp", price: "€16.00" },
+          { name: "Eggplant Shrimp", price: "€18.00", popular: true },
+          { name: "Royal Prawns", price: "€18.00", popular: true },
+          { name: "Bangal Fish", price: "€16.00", popular: true },
+          { name: "Curry Fish", price: "€16.00", popular: true },
         ]
       },
     ]
@@ -252,27 +274,13 @@ const menuCategories = [
       {
         name: "Rice Dishes",
         items: [
-          { name: "Vegetable Biryani", price: "€14.00", popular: true },
-          { name: "Chicken Biryani", price: "€15.00", popular: true, image: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" },
+          { name: "Vegetable Biryani", price: "€15.00", popular: true },
+          { name: "Chicken Biryani", price: "€16.00", popular: true },
           { name: "Lamb Biryani", price: "€16.00" },
-          { name: "Prawn Biryani", price: "€17.00" },
-          { name: "Jeera Rice", price: "€5.00" },
-          { name: "Steamed Basmati Rice", price: "€4.00" },
-        ]
-      },
-    ]
-  },
-  {
-    id: "traditional",
-    name: "Traditional Specialties",
-    subcategories: [
-      {
-        name: "Chef's Specialties",
-        items: [
-          { name: "Thali (Vegetarian)", price: "€18.00", popular: true },
-          { name: "Thali (Non-Vegetarian)", price: "€20.00", popular: true },
-          { name: "Kofta Curry", price: "€14.00" },
-          { name: "Dhaba Style Curry", price: "€15.00" },
+          { name: "Shrimp Biryani", price: "€16.00" },
+          { name: "Shahi Biryani", price: "€17.00" },
+          { name: "Basmati rice", price: "€5.00" },
+          { name: "Matar pulao", price: "€6.00" },
         ]
       },
     ]
@@ -284,12 +292,10 @@ const menuCategories = [
       {
         name: "Sweet Endings",
         items: [
-          { name: "Gulab Jamun", price: "€6.00", popular: true, image: "https://images.unsplash.com/photo-1619110742272-6620db3115e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" },
-          { name: "Rasmalai", price: "€6.00", popular: true },
-          { name: "Kulfi", price: "€5.00" },
-          { name: "Halwa", price: "€5.00" },
-          { name: "Kheer", price: "€5.00" },
-          { name: "Sorbet", price: "€5.00" },
+          { name: "Gulab Jamun", price: "€4.00", popular: true },
+          { name: "Suji halwa", price: "€4.00", popular: true },
+          { name: "Sherbet", price: "€4.00" },
+          { name: "Kulfi - Indian Ice Cream", price: "€5.50" },
         ]
       },
     ]
